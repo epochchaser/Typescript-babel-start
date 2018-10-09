@@ -8,6 +8,8 @@
     "@babel/core": "^7.0.0",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-transform-regenerator": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-typescript": "^7.0.0",
     "typescript": "^3.0.1"
@@ -18,5 +20,8 @@
     "build": "npm run build:types && npm run build:js",
     "build:types": "tsc",
     "build:js": "babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.1.2"
   }
 }
